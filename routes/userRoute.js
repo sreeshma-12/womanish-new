@@ -51,8 +51,8 @@ router.get("/productdetails", auth.isLogin, auth.isBlocked, userController.produ
 // router.get("/payment", auth.isLogin, auth.isBlocked,userController.verifypayment);
 router.get("/product-det", auth.isLogin, auth.isBlocked, userController.productdet);
 router.get("/home", auth.isLogin, auth.isBlocked, userController.loadHome);
- router.get("/orderDetails/:id", auth.isLogin, auth.isBlocked, userController.orderDetails);
-router.get("/singleOrder/:id",  userController.orderlist);
+//  router.get("/orderDetails/:id", auth.isLogin, auth.isBlocked, userController.orderDetails);
+router.get("/orderDetails/:id", auth.isLogin, auth.isBlocked, userController.orderli);
 router.get("/account", auth.isLogin, auth.isBlocked, userController.account);
 router.post("/login", userController.verifyLogin);
 router.get("/logout", userController.userLogout);
